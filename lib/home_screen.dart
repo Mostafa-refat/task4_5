@@ -5,8 +5,6 @@ import 'pages/second_screen.dart';
 import 'pages/third_screen.dart';
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({Key? key}) : super(key: key);
-
   @override
   _HomeScreenState createState() => _HomeScreenState();
 }
@@ -53,11 +51,13 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
       ),
       body: TabBarView(
+
         children: [
           AllPage(),
           InCompletePage(),
           CompletePage(),
         ],
+
       ),
     );
   }
